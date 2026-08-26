@@ -1,0 +1,38 @@
+{
+  "name": "genpark-sandboxed-terminal-computer-control-interpreter-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Sandboxed computer control interpreter executing terminal shell scripts and graphical desktop automation safely.",
+  "author": "genpark",
+  "category": "computer-control",
+  "tags": [
+    "open-interpreter",
+    "computer-use",
+    "terminal-sandbox",
+    "local-execution",
+    "automation-agent"
+  ],
+  "inputs": {
+    "natural_language_command": {
+      "type": "string"
+    },
+    "execution_runtime": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "interpreter_session_id": {
+      "type": "string"
+    },
+    "commands_synthesized_and_run": {
+      "type": "integer"
+    },
+    "permission_sandbox_policy_enforced": {
+      "type": "boolean"
+    },
+    "execution_audit_log_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
